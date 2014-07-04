@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   def password=(password)
     @password = password
     self.password_digest = BCrypt::Password.create(password)
-    self.save!
+    self.save
   end
   
   def self.generate_token

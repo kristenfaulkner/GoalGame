@@ -1,0 +1,7 @@
+<%=button_to "Delete my Account", 
+             user_url(@user), 
+             method: :delete, 
+             :onclick => "return confirm(
+             'Are you sure you want to delete your account? 
+             This action cannot be undone')"
+%>
